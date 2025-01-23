@@ -15,75 +15,53 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
 
     <title>Calculator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="titulo">
-          <div class="alternar">
-            <h3>Calc</h3>
-            <div class="direita">
-              <p id="um">1</p>
-              <p id="dois">2</p>
-              <p id="tres">3</p>
+    <div class="container">
+      <div class="title">
+        <div class="toggle">
+          <h3>Calc</h3>
+          <div class="control">
+            <p>Theme</p>
+            <div class="right">
+              <p id="one">1</p>
+              <p id="two">2</p>
+              <p id="three">3</p>
             </div>
-            <div class="controle">
-              <p>Tema</p>
-              <div class="caixa">
-                <div id="circulo"></div>
-              </div>
+            <div class="box">
+              <div id="circle"></div>
             </div>
           </div>
         </div>
-        <div class="display">
-          <form class="calc">
-            <input type="text" name="text" readonly id="display" />
-          </form>
+      </div>
+      <div class="display">
+        <form class="calc">
+          <input type="text" name="text" readonly id="display" />
+        </form>
       </div>
       <div class="calc-body">
         <div class="btn">
-          <button class="num" onclick="appendtodisplay('7')">7</button>
-          <button class="num" onclick="appendtodisplay('8')">8</button>
-          <button class="num" onclick="appendtodisplay('9')">9</button>
+          <button class="num" onclick="appendToDisplay('7')">7</button>
+          <button class="num" onclick="appendToDisplay('8')">8</button>
+          <button class="num" onclick="appendToDisplay('9')">9</button>
           <button class="del" onclick="del()">DEL</button>
-          <button class="num" onclick="appendtodisplay('4')">4</button>
-          <button class="num" onclick="appendtodisplay('5')">5</button>
-          <button class="num" onclick="appendtodisplay('6')">6</button>
-          <button  onclick="appendtodisplay('+')">+</button>
-          <button class="num" onclick="appendtodisplay('1')">1</button>
-          <button class="num" onclick="appendtodisplay('2')">2</button>
-          <button class="num" onclick="appendtodisplay('3')">3</button>
-          <button onclick="appendtodisplay('-')">-</button>
-          <button class="num" onclick="appendtodisplay('.')">.</button>
-          <button class="num" onclick="appendtodisplay('0')">0</button>
-          <button onclick="appendtodisplay('/')">/</button>
-          <button onclick="appendtodisplay('x')">X</button>
-          <buttom class="reset" onclick="displayResetar()">Resetar</buttom>
-          <buttom class="igual" onclick="displayIgual()">=</buttom>
-  
+          <button class="num" onclick="appendToDisplay('4')">4</button>
+          <button class="num" onclick="appendToDisplay('5')">5</button>
+          <button class="num" onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('+')">+</button>
+          <button class="num" onclick="appendToDisplay('1')">1</button>
+          <button class="num" onclick="appendToDisplay('2')">2</button>
+          <button class="num" onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('-')">-</button>
+          <button class="num" onclick="appendToDisplay('.')">.</button>
+          <button class="num" onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('/')">/</button>
+          <button onclick="appendToDisplay('*')">X</button>
+          <button class="reset" onclick="resetDisplay()">Reset</button>
+          <button class="equal" onclick="equalDisplay()">=</button>
         </div>
       </div>
-    </main>
-    
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.linkedin.com/in/deividson-mesquita-0b049323b/">Deividson Mesquita</a>.
     </div>
-
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
